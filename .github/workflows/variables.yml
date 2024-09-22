@@ -6,8 +6,5 @@ jobs:
     env:
       USERNAME: ${{ vars.USERNAME }}
     steps:
-      - run: echo "${BRANCH}"
-      - uses: actions/checkout@v4
-        with:
-          ref: ${USERNAME}
+      - run: echo "${USERNAME}"
       
